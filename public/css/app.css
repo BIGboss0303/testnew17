@@ -1,0 +1,1121 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #F5F5F5;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 1.2;
+    height: 100%;
+
+
+}
+.wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 1294px;
+    margin: 0 auto ;
+}
+.mini_container{
+    width: 549px;
+    margin: 0 auto ;
+}
+/*==========================================================*/
+.title{
+    font-family: 'Readex Pro';
+    font-size: 42px;
+    line-height: 1.25;
+    text-align: center;
+    margin-top: 74px;
+}
+.text{
+    font-family: 'Readex Pro';
+    font-size: 14px;
+    text-align: center;
+    max-width: 630px;
+    margin: 9px auto 55px auto;
+}
+.pagination{
+    /* padding: 4px;
+    display: flex;
+    background-color: #f5f5f5;
+    width: 600px; */
+}
+/*==========================================================*/
+.header{
+
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.menu{
+   margin: 5px 0;
+	 display: flex;
+}
+.menu__item{
+    margin-right: 34px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 0px solid #F5F5F5;
+    transition: border-bottom 0.1s;
+}
+.menu__item:hover{
+
+    border-bottom: 2px solid black;
+
+}
+.menu__logout{
+	display: inline;
+	border: none;
+	background: rgba(0,0,0,0);
+	padding: 10px;
+	margin-top: -10px;
+
+}
+.header__icon{
+    margin-left: 14px;
+    padding: 10px;
+    border-bottom: 0px solid #F5F5F5;
+    transition: border-bottom 0.5s
+}
+.header__icon:hover{
+
+
+    border-bottom: 1px solid black;
+}
+/*=========================================================*/
+.main{
+    flex-grow: 1;
+}
+
+.swiper{
+    height: 550px;
+    width: 1294px;
+    color: black;
+    border-radius: 30px;
+}
+.swiper-slide{
+
+}
+.slide1{
+    background-color: #ccd7e5;
+    background-image: url('../images/slide1.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+.slide2{
+    background-color: #DCE5E2;
+    background-image: url('../images/slide2.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: auto 80%;
+}
+.slide3{
+    background-color: #8fc4a4;
+    background-image: url('../images/slide3.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: auto 80%;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    color: #222;
+}
+.swiper .swiper-pagination-bullet{
+    width: 194px;
+    height: 2px;
+    background-color: #222;
+    border-radius: 0%;
+}
+.swiper__body{
+    padding: 145px 0px 0 56px;
+    max-width: 650px;
+}
+.swiper__title{
+    font-family: 'Readex Pro';
+    font-size: 58px;
+    margin-bottom: 30px;
+}
+.swiper__text{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.swiper__button{
+    font-size: 18px;
+    padding: 14px 53px;
+    border:1px solid black;
+    border-radius:30px;
+    transition: background-color 1s, color 1s;
+}
+.swiper__button:hover{
+    background-color: #333;
+    color:#DCE5E2;
+}
+/*==========================================================*/
+
+.tables{
+    position: relative;
+    height: 792px;
+}
+.table{
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.25);
+    transition: box-shadow 0.8s,transform 0.8s,background-color 0.8s;
+}
+.table:hover{
+    box-shadow: 0 0 25px rgba(0, 0, 0,1);
+    transform: scale(1.03);
+    background-color: #ccd7e5;
+    z-index: 10;
+}
+.table__subtitle{
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 1.28;
+}
+.table__title{
+    font-family: 'Readex Pro';
+    font-size: 32px;
+}
+.table-laptop{
+    height: 472px;
+    width: 639px;
+    position: absolute;
+}
+.table-laptop__image{
+    position: absolute;
+    left: 10%;
+}
+.table-laptop__body{
+    position: absolute;
+    max-width: 192px;
+    text-align: right;
+    bottom: 0;
+    right:10%;
+}
+.table-phone{
+    height: 792px;
+    width: 312px;
+    left: 50.7%;
+}
+.table-phone__image{
+    position: absolute;
+    right: 0;
+}
+.table-phone__body{
+    position: absolute;
+    max-width: 250px;
+    text-align: center;
+    bottom: 20%;
+    left: 10%;
+}
+
+
+.table-tablet{
+    height: 792px;
+    width: 312px;
+    left: 76%;
+}
+.table-tablet__image{
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+.table-tablet__body{
+    position: absolute;
+    max-width: 250px;
+    text-align: center;
+    top:13%;
+    left: 10%;
+}
+.table-watch{
+    height: 270px;
+    width: 639px;
+    left: 0;
+    bottom: 0;
+}
+.table-watch__image{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.table-watch__body{
+    position: absolute;
+    max-width: 128px;
+    text-align: right;
+    bottom:20%;
+    right:5%;
+
+}
+/*==========================================================*/
+.mostSelled__blocks{
+    display: flex;
+}
+.mostSelled__block{
+    flex: 0 0 25%;
+    border-bottom:3px solid rgba(0, 0, 0, 0) ;
+    transition: border 0.8s;
+}
+.mostSelled__block:hover{
+    border-bottom:3px solid black ;
+}
+.mostSelled__name{
+    font-family: 'Readex Pro';
+    font-size: 22px;
+    line-height: 1.25;
+    margin-bottom: 9px;
+    max-width: 260px;
+}
+.mostSelled__description{
+    margin-bottom: 8px;
+    max-width: 260px;
+}
+.mostSelled__price{
+    font-size: 18px;
+    color: #000;
+    max-width: 260px;
+}
+.mostSelled__img{
+    margin-left: 35px;
+    margin-bottom: 33px;
+}
+/*==========================================================*/
+.theBest__blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.theBest__block{
+    background-color: #eaebec;
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.theBest__subtitle{
+    font-family: 'Readex Pro';
+    font-size: 13px;
+    line-height: 1.29;
+    margin: 41px 0 15px 0;
+}
+.theBest__title{
+    font-family: 'Readex Pro';
+    font-size: 28px;
+    line-height: 1.25px;
+    margin-bottom: 60px;
+}
+.theBest__button{
+    padding: 14px 63px;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: background-color 1s, color 1s;
+    margin-bottom: 30px;
+}
+.theBest__button:hover{
+    background-color: #333;
+    color:#DCE5E2
+}
+.theBest__img{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+/*=========================================================*/
+.look__miss{
+    border-radius: 30px;
+    background-color: #DCE5E2;
+    padding: 45px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.miss__title{
+}
+.miss__img{
+    margin-left: 155px;
+}
+.miss__signUp{
+    margin-left: 70px;
+}
+.miss__email{
+    background-color:#DCE5E2 ;
+    padding: 14px 30px;
+		border: 2px solid black;
+    border-radius: 30px 0 0 30px;
+    min-width: 225px;
+}
+.miss__button{
+		border: 2px solid black;
+
+    border-radius:0 30px 30px 0;
+    background-color:#000 ;
+    color: #DCE5E2;
+    padding: 14px 30px;
+    margin-left: -6px;
+    transition: background-color 0.3s;
+}
+.miss__button:hover{
+    background-color:#296034 ;
+}
+
+
+
+
+
+/*==========================================================*/
+.sort{
+    background-color: #eee;
+    padding: 40px;
+    margin-top: 60px;
+}
+.sort__title{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.sort__body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.sort__block{
+    width: 400px;
+    height: 400px;
+    flex: 0 0 32%;
+    background-color: #fff;
+    margin-bottom: 25px;
+    position: relative;
+}
+.sort__block-title{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-family: 'Readex Pro';
+    font-size: 32px;
+}
+.sort__block-image{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    height: 300px;
+    width: auto;
+}
+.sort__block-image-phone{
+    height: 380px;
+    bottom: 0;
+    right: 0;
+}
+.sort__block-image-watch{
+    height: 270px;
+    bottom: 10%;
+    right: 10%;
+}
+
+
+
+/*=========================================================*/
+.catalog{
+    background-color: #eee;
+
+}
+.catalog__flex{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.catalog__filter{
+    flex: 0 0 28%;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.25);
+    border-radius: 10px;
+    padding: 20px 20px;
+    max-height: 880px;
+}
+.catalog__body{
+    flex: 0 0 67%;
+}
+.product__body{
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.25);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.product__img{
+    margin: auto 0;
+}
+.product__info{
+    margin-left: 20px;
+    max-width: 500px;
+}
+.product__name{
+    font-family: "Readex Pro";
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.product__description{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.product__company{
+    font-size: 18px;
+    font-family: "Readex Pro";
+    margin-bottom: 20px;
+
+}
+.product__promotions{
+    display: flex;
+    margin-bottom: 10px;
+}
+.product__bonus{
+    color: #9c2acd;
+    padding: 1px 10px;
+    background-color: #ecd1fa;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.product__discount{
+    color: #0a9c3a;
+    padding: 1px 10px;
+    background-color: #a4f3ba;
+    border-radius: 4px;
+    margin-right: 5px;
+
+}
+.products__rates{
+    margin-bottom: 10px;
+}
+.products__availability{
+}
+.product__buy{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    flex:1 1 auto;
+}
+.product__price{
+    font-size: 26px;
+    font-family: "Readex Pro";
+    margin-top: 30px;
+}
+.product__buttons{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.product__button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    font-size: 16px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.product__button:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+
+
+
+
+.filter__title{
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+.filter__subtitle{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    line-height: 1.25;
+    margin:10px 0
+}
+.filter__block{
+    background-color: #d9dedd;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.search__block{
+    display: flex;
+}
+.filter__search {
+    padding: 0.375rem 0.75rem;
+    width: 80%;
+    font-size: 16px;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.filter__search::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+.filter__search:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.filter__search:disabled,
+.filter__search[readonly] {
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+.filter__search-button{
+    padding: 6px 6px;
+    margin-left: 4px;
+    font-size: 16px;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.filter__search-button:hover{
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.filter__search-button img{
+    width: 20px;
+    margin-bottom: -4px;
+}
+.filter__button{
+    margin: 15px 0 0px 105px;
+
+    font-size: 18px;
+    padding: 12px 45px;
+    width: 150px;
+    border:1px solid black;
+    border-radius:10px;
+    transition: background-color 1s, color 1s;
+}
+.filter__button:hover{
+    background-color: #333;
+    color:#DCE5E2;
+}
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #222;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-radio:checked+label::before {
+  border-color: #222;
+  background-color: #222;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #9b9b9b;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-radio:not(:disabled):active+label::before {
+  background-color: #222;
+  border-color: #222;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-radio:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(22, 22, 22, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-radio:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-radio:disabled+label::before {
+  background-color: #e9ecef;
+}
+.select-css {
+    display: block;
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 4 00;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em; width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #d9dedd;
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand { display: none; }
+.select-css:hover { border-color: #222; }
+.select-css:focus { border-color: #222;
+
+    color: #222;
+    outline: none;
+}
+.select-css option { font-weight:normal; }
+*[dir="rtl"] .select-css, :root:lang(ar) .select-css, :root:lang(iw) .select-css {
+    background-position: left .7em top 50%, 0 0;
+    padding: .6em .8em .5em 1.4em;
+}
+
+
+
+
+
+
+.filter__wrapper-range{
+
+    position: relative;
+
+    padding:  10px;
+
+}
+.filter__container-range{
+    position: relative;
+    /* width: 100%; */
+    height: 30px;
+    margin-top: 10px;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+.slider-track{
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 3px;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 3px;
+}
+input[type="range"]::-moz-range-track{
+    -moz-appearance: none;
+    height: 3px;
+}
+input[type="range"]::-ms-track{
+    appearance: none;
+    height: 3px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #222;
+    cursor: pointer;
+    margin-top: -6px;
+    pointer-events: auto;
+    border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #222;
+    pointer-events: auto;
+}
+input[type="range"]::-ms-thumb{
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ddd;
+    pointer-events: auto;
+}
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: #ffffff;
+    border: 2px solid #aaa;
+}
+.filter__values-range{
+    background-color: #222;
+    width: 40%;
+    position: relative;
+    margin:0 auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+}
+/*==========================================================*/
+.pagination{
+    display: inline-flex;
+    font-size: 20px;
+    margin:50px 150px;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.25);
+    background-color: #fff;
+}
+.page-item{
+    padding: 7px 15px 5px 15px  ;
+    border-bottom: 2px solid #fff;
+
+}
+.page-item:hover{
+    border-bottom: 2px solid black;
+}
+.disabled{
+    color: rgba(0, 0, 0, 0.5);
+}
+.disabled:hover{
+    border-bottom: 2px solid #fff;
+
+}
+.active{
+    background-color: #222;
+    color: #fff;
+    border-bottom: 2px solid #222;
+
+}
+
+
+
+
+
+/*==========================================================*/
+.show{
+    background-color: #eee;
+    padding: 80px 0;
+}
+.show__body{
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.25);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.show__img{
+    flex: 0 0 50%;
+}
+.show__img img{
+    width: 80%;
+}
+.show__info{
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+.show__title{
+    font-family:"Readex Pro";
+    font-size: 38px;
+}
+.show__company{
+    font-size: 22px;
+
+}
+.show__description{
+    font-size: 22px;
+    margin-top: 10px;
+    flex: 1 1;
+}
+.show__buy{
+    display:flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.show__price{
+    font-family: "Readex Pro";
+    font-size: 38px;
+}
+.show__button{
+    font-size: 18px;
+    padding: 10px 36px;
+    border:1px solid black;
+    border-radius:10px;
+    transition: background-color 0.5s, color 0.5s;
+    margin-right: 25px;
+}
+.show__button:hover{
+    background-color: #111;
+    color:#DCE5E2;
+}
+
+/*==========================================================*/
+.form{
+	padding: 35px 0;
+}
+.form__body{
+	background-color: #fff;
+	padding: 20px 40px;
+	margin: 0 auto;
+	width: 420px;
+	border-radius: 25px;
+	box-shadow: 0 0 15px rgba(0, 0, 0,0.25);
+}
+.form__title{
+	font-size: 42px;
+	font-family: 'Readex Pro';
+	margin-top: 10px;
+	text-align: center;
+
+}
+.form__block{
+	margin: 20px 0;
+	text-align: left;
+}
+.form__label{
+	display: block;
+	font-size: 22px;
+	font-family: 'Readex pro';
+	transform: translateY(0px);
+}
+.form__input{
+	outline: none;
+	width: 100%;
+
+	height: 20px;
+	border: none;
+	border-bottom: 1px solid black;
+	display: block;
+}
+.form__button{
+		font-size: 18px;
+		border:none;
+    padding: 10px 36px;
+    border-radius:10px;
+		background-color: #000;
+	  color:#DCE5E2;
+
+    transition: background 0.5s, color 0.5s,box-shadow 0.5s;
+		margin-left: 135px;
+}
+.form__button_login{
+    margin-left: 155px;
+}
+.form__button:hover{
+	background-color: #f5f5f5;
+	color: #000;
+	box-shadow: 0 0 15px rgba(0, 0, 0,0.75);
+
+}
+input:hover+label{
+	color: red;
+}
+.form__error{
+	color: #d66;
+}
+/*==========================================================*/
+.flash__message{
+	padding: 15px 100px;
+	text-align: center;
+	max-width: 250px;
+
+	background-color: #000;
+	color: #fff;
+	font-size: 18px;
+	margin: 0 auto;
+	border-radius:20px ;
+	margin-bottom: 10px;
+}
+/*==========================================================*/
+.busket__flex{
+    display: flex;
+}
+.busket__body{
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.25);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+.busket__img{
+    margin: auto 0;
+}
+.busket__info{
+    margin-left: 20px;
+    max-width: 500px;
+}
+.busket__product_name{
+    font-family: "Readex Pro";
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.busket__product_description{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.busket__product_promotions{
+    display: flex;
+    margin-bottom: 10px;
+}
+.busket__product_bonus{
+    color: #9c2acd;
+    padding: 1px 10px;
+    background-color: #ecd1fa;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.busket__product_discount{
+    color: #0a9c3a;
+    padding: 1px 10px;
+    background-color: #a4f3ba;
+    border-radius: 4px;
+    margin-right: 5px;
+
+}
+.busket__product_rates{
+    margin-bottom: 10px;
+}
+/* .busket__buy{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    flex:1 1 auto;
+} */
+.busket__product_price{
+    font-size: 26px;
+    font-family: "Readex Pro";
+    margin-top: 30px;
+}
+.busket__product_quantity{
+    font-size: 18px;
+    padding: 3px 20px;
+}
+.busket__form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.25);
+    border-radius: 10px;
+    padding: 25px 15px;
+    margin-bottom: 20px;
+    min-width: 330px;
+    margin: 0 20px;
+    max-height: 200px;
+    position:sticky;
+    top: 10px;
+}
+.busket__total{
+    font-size:34px;
+    font-family: "Readex Pro";
+
+}
+.busket__total_price{
+    font-size: 26px;
+    font-family: "Readex Pro";
+    margin-top: 30px;
+}
+.busket__total_submit{
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 40px;
+
+}
+
+
+
+
+/*==========================================================*/
+.footer{
+    background-color: #eaebec;
+}
+.footer__upper{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    padding: 30px 0 50px 0;
+}
+.footer__lower{
+    margin-top: 40px;
+}
+.footer__info{
+    max-width: 394px;
+}
+.footer__text{
+    margin-top: 18px;
+    font-size: 16px;
+}
+.footer__table{
+    max-width: 791px;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    margin-top: -10px;
+}
+
+tr{
+}
+th{
+    text-align: left;
+    font-family: 'Readex pro';
+    font-size: 22px;
+    line-height: 1.25;
+    margin-left: 134px;
+    min-width: 197px;
+}
+td{
+    font-family: 17px;
+    line-height: 1.27;
+
+}
+.made{
+    font-size: 18px;
+}
+.made span{
+    font-family: 'Readex pro';
+}
+
+
+
+
+/*==========================================================*/
